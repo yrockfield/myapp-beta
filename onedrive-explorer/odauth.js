@@ -203,17 +203,10 @@ function removeLoginButton() {
 function challengeForAuth() {
   var appInfo = getAppInfo();
 
-  /*
   var url =
     appInfo.authServiceUri +
     "?client_id=" + appInfo.clientId +
     "&response_type=token" +
-    "&redirect_uri=" + encodeURIComponent(appInfo.redirectUri);
-  */
-  var url =
-    appInfo.authServiceUri +
-    "?client_id=" + appInfo.clientId +
-    "&response_type=code" +
     "&redirect_uri=" + encodeURIComponent(appInfo.redirectUri);
 
     if (appInfo.scopes)
