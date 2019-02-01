@@ -206,7 +206,7 @@ function challengeForAuth() {
   var url =
     appInfo.authServiceUri +
     "?client_id=" + appInfo.clientId +
-    "&response_type=token" +
+    "&response_type=code" +
     "&redirect_uri=" + encodeURIComponent(appInfo.redirectUri);
 
     if (appInfo.scopes)
